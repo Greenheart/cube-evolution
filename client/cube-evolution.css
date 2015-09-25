@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+#content {
+	font-family: 'Indie Flower', sans-serif;
+}
+
+h1 {
+	padding-top: 5px;
+	font-size: 125px;
+}
+
+canvas {
+	position: absolute;
+	background: transparent;
+	top: 25px;
+	left: 80px;
+}
+
+#container {
+	position: relative;
+	width: 800px;
+	height: 530px;
+	margin: 0 auto;
+    display: block;
+}
+
+#description {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-color: #7ACC52;
+    font-size: 40px;
+}
+
+#backgroundCanvas {
+	background-color: #FFFF89;
+}
+
+#uiCanvas {
+	background-color: #7ACC52;
+}
