@@ -6,3 +6,5 @@ Cubes = new Mongo.Collection("cubes");
 Accounts.ui.config({
   passwordSignupFields: "USERNAME_ONLY"
 });
+
+Meteor.subscribe("cubes");

@@ -2,4 +2,7 @@
 // for game logic, check game.js
 
 Cubes = new Mongo.Collection("cubes");
-Players = new Mongo.Collection("players");
+
+Meteor.publish("cubes", function(){
+  return Cubes.find().fetch();
+});
