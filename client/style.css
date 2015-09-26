@@ -13,11 +13,18 @@ canvas {
 }
 
 .start-screen {
-	font-size: 30px;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: lighter;
 	margin: 25% auto;
 	width: 600px;
 	text-align: center;
 	height: 300px;
+}
+
+.start-screen h2 {
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .cube-stats {

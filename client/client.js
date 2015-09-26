@@ -21,5 +21,8 @@ Template.startScreen.events({
     console.log("starting game...");
 
     Meteor.call("createCube");
+    //TODO:
+    // * Improve UI for starting new game.
+    // * improve gameplay-UI
   }
 });
