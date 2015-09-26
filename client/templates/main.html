@@ -1,0 +1,22 @@
+<head>
+  <title>Cube Evolution</title>
+</head>
+
+<body>
+  <div id="content">
+    {{> main}}
+  </div>
+</body>
+
+<template name="main">
+  {{> loginButtons}}
+
+  {{#if currentUser}}
+    {{#if userHasCube}}
+      {{> cubeStats}}
+      {{> game}}
+    {{else}}
+      {{> startScreen}}
+    {{/if}}
+  {{/if}}
+</template>
