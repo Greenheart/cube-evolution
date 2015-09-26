@@ -3,9 +3,7 @@
 </head>
 
 <body>
-  <div id="content">
     {{> main}}
-  </div>
 </body>
 
 <template name="main">
@@ -13,8 +11,8 @@
 
   {{#if currentUser}}
     {{#if userHasCube}}
-      {{> cubeStats}}
       {{> game}}
+      {{> cubeStats}}
     {{else}}
       {{> startScreen}}
     {{/if}}
