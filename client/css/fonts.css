@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Indie Flower';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Indie-Flower-regular/Indie-Flower-regular.eot');
+  src: url('/fonts/Indie-Flower-regular/Indie-Flower-regular.eot?#iefix') format('embedded-opentype'),
+       local('Indie Flower'),
+       local('Indie-Flower-regular'),
+       url('/fonts/Indie-Flower-regular/Indie-Flower-regular.woff2') format('woff2'),
+       url('/fonts/Indie-Flower-regular/Indie-Flower-regular.woff') format('woff'),
+       url('/fonts/Indie-Flower-regular/Indie-Flower-regular.ttf') format('truetype'),
+       url('/fonts/Indie-Flower-regular/Indie-Flower-regular.svg#IndieFlower') format('svg');
+}
