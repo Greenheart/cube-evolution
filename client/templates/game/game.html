@@ -1,25 +1,24 @@
 <template name="game">
   <div class="game-wrapper">
-    {{> cubeStats}}
+    <canvas></canvas>
 
-    <div class="game">
-      <div class="background"></div>
-      <canvas id="gameCanvas"></canvas>
-      <div class="UI"></div>
+    <div class="game-ui">
+      {{> cubeStats}}
+      {{> leaderboard}}
+      {{> cubeExperience}}
     </div>
+  </div>
+</template>
+
     <!--
     TODO:
       DONE - 1. create a design sketch in some external tool (check bookmarks)
       2. Refactor game-UI design from scratch
-        * Maybe use whole screen as game window.
-        * use UI-elements
+        DONE - * Maybe use whole screen as game window.
+        DONE - * use UI-elements
           * General UI-elem-class with rgba(x,x,x, 0.7)-color for transparent background
           * UI-orientational-classes like top, bottom, left, right
         * Expandable UI-elements on click
         *
       *
      -->
-
-    {{> leaderboard}}
-  </div>
-</template>

@@ -2,6 +2,12 @@
 
 /*@import url(https://fonts.googleapis.com/css?family=Indie+Flower);*/
 
+* {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
 	font-family: 'Indie Flower', sans-serif;
 	font-size: 20px;
@@ -12,12 +18,12 @@ header {
     display: block;
     text-align: center;
     background-color: #7ACC52;
-		font-size: 2rem;
+		font-size: 4vh;
 }
 
 header h1 {
-	padding-top: 5px;
-	font-size: 3.5rem;
+	padding-top: 0.01vh;
+	font-size: 8vh;
 }
 
 #login-buttons {
@@ -30,7 +36,7 @@ header h1 {
 	line-height: 1.5;
 	font-weight: lighter;
 	margin: 10% auto;
-	width: 600px;
+	max-width: 600px;
 	text-align: center;
 	height: 300px;
 }
@@ -50,6 +56,12 @@ header h1 {
 }
 
 .start-screen input {
+	font-family: "Indie Flower", cursive;
+	font-weight: bold;
+	background-color: rgba(100, 200, 200, 0.7);
 	margin-top: 1rem;
+	border: none;
+	padding: 6px;
+	border-radius: 3px;
 	transform: scale(1.5);
 }
