@@ -1,50 +1,13 @@
+/* General App UI */
+
 /*@import url(https://fonts.googleapis.com/css?family=Indie+Flower);*/
 
 body {
 	font-family: 'Indie Flower', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
 
-canvas {
-	position: absolute;
-	background: transparent;
-	top: 25px;
-	left: 80px;
-}
-
-.start-screen {
-	font-size: 18px;
-	line-height: 1.5;
-	font-weight: lighter;
-	margin: 10% auto;
-	width: 600px;
-	text-align: center;
-	height: 300px;
-}
-
-.start-screen h2 {
-	font-size: 30px;
-	font-weight: bold;
-}
-
-.cube-stats {
-	position: absolute;
-	left: 10%;
-	top: 50%;
-	width: 100px;
-	height: 200px;
-	background-color: red;
-}
-
-#container {
-	position: relative;
-	width: 800px;
-	height: 530px;
-	margin: 0 auto;
-  display: block;
-}
-
-#description {
+header {
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -52,7 +15,7 @@ canvas {
 		font-size: 2rem;
 }
 
-#description h1 {
+header h1 {
 	padding-top: 5px;
 	font-size: 3.5rem;
 }
@@ -63,10 +26,30 @@ canvas {
 	left: 5px;
 }
 
-#backgroundCanvas {
-	background-color: #FFFF89;
+.start-screen {
+	line-height: 1.5;
+	font-weight: lighter;
+	margin: 10% auto;
+	width: 600px;
+	text-align: center;
+	height: 300px;
 }
 
-#uiCanvas {
-	background-color: #7ACC52;
+.start-screen h2 {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+.start-screen h3 {
+	font-size: 1.5rem;
+	Background-color: rgba(100, 200, 200, 0.7);
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+	border-radius: 3px;
+}
+
+.start-screen input {
+	margin-top: 1rem;
+	transform: scale(1.5);
 }

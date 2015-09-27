@@ -1,0 +1,42 @@
+/* Styling for game-UI */
+
+.cube-stats {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	width: 100px;
+	height: 200px;
+	background-color: red;
+}
+
+/*.game-wrapper {
+	position: relative;
+	width: 800px;
+	height: 530px;
+	margin: 0 auto;
+  display: block;
+}
+
+.game {
+  position: relative;
+}
+
+.game canvas, .game div {
+	position: absolute;
+	background: transparent;
+	top: 25px;
+	left: 80px;
+}
+
+.game.UI {
+	background-color: #7ACC52;
+	width: 640px;
+	height: 40px;
+}
+
+.game.background {
+	background-color: #FFFF89;
+	width: 640px;
+	height: 480px;
+}
+*/

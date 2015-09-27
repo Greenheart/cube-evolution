@@ -7,21 +7,31 @@ Accounts.ui.config({
 
 Meteor.subscribe("cubes");
 
+Session.setDefault("inGame", false);
+
+// ---------------- GENERAL UI -------------------
+
 Template.main.helpers({
-  'userHasCube': function() {
-    //returns the user's cube
-    console.log("userHasCube: " + Cubes.findOne({ owner: Meteor.userId() }));
-    return Cubes.findOne({ owner: Meteor.userId() });
+  'userInGame': function() {
+    return Session.get("inGame");
   }
 });
 
 Template.startScreen.events({
   'click input.startGame': function(event) {
     event.preventDefault();
-    console.log("starting game...");
 
-    Meteor.call("createCube");
-    //TODO:
-    // * improve gameplay-UI
+    if (!userHasCube()) {
+      Meteor.call("createCube");
+    }
+
+    Session.set("inGame", true);
   }
 });
+
+// --------------- CLIENT HELPERS -----------------
+
+function userHasCube() {
+  // check if the current user has a cube
+  return Cubes.findOne({ owner: Meteor.userId() });
+}
