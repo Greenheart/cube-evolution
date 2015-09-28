@@ -10,7 +10,7 @@
 
 body {
 	font-family: 'Indie Flower', sans-serif;
-	font-size: 20px;
+	font-size: 3.8vh;
 }
 
 header {
@@ -23,13 +23,20 @@ header {
 
 header h1 {
 	padding-top: 0.01vh;
-	font-size: 8vh;
+	font-size: 7.9vh;
 }
 
 #login-buttons {
 	position: absolute;
-	top: 5px;
-	left: 5px;
+	font-size: 4vh;
+	top: 0.5vh;
+	left: 0.5vw;
+}
+
+#login-dropdown-list {
+	font-size: 4vh;
+	width: 20vw;
+	max-width: 200px;
 }
 
 .start-screen {
@@ -42,12 +49,12 @@ header h1 {
 }
 
 .start-screen h2 {
-	font-size: 2rem;
+	font-size: 4.5vh;
 	font-weight: bold;
 }
 
 .start-screen h3 {
-	font-size: 1.5rem;
+	font-size: 4vh;
 	Background-color: rgba(100, 200, 200, 0.7);
 	display: block;
 	margin: 0 auto;
@@ -58,10 +65,21 @@ header h1 {
 .start-screen input {
 	font-family: "Indie Flower", cursive;
 	font-weight: bold;
+	font-size: 2.5vh;
 	background-color: rgba(100, 200, 200, 0.7);
-	margin-top: 1rem;
+	margin-top: 2vh;
 	border: none;
-	padding: 6px;
+	padding: 0.5vh 0.5vw;
 	border-radius: 3px;
 	transform: scale(1.5);
+}
+
+@media screen and (min-width: 1000px) {
+	#login-buttons {
+		font-size: 3.5vh;
+	}
+
+	#login-dropdown-list {
+		font-size: 3.5vh;
+	}
 }
