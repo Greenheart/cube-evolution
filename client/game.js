@@ -18,3 +18,11 @@ Template.game.events({
 Template.game.helpers({
 
 });
+
+Template.onlinePlayersCount.helpers({
+  'count': function() {
+    // counts the number of players online
+    console.log(Meteor.users.find({ "status.online": true }));
+    return Meteor.users.find({ "status.online": true }).count();
+  }
+});

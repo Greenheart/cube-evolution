@@ -6,6 +6,7 @@ Accounts.ui.config({
 });
 
 Meteor.subscribe("cubes");
+Meteor.subscribe("userStatus");
 
 Session.setDefault("inGame", false);
 
@@ -35,3 +36,9 @@ function userHasCube() {
   // check if the current user has a cube
   return Cubes.findOne({ owner: Meteor.userId() });
 }
+
+
+/* TODO:
+    * Handle user-logout events + user closing window (window.onbeforeunload like in TicTacToe)
+      * Set Session-var "inGame" to false
+*/

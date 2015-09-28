@@ -36,13 +36,18 @@
 }
 
 .experience {
-	bottom: 1vh;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 40%;
 	height: 5%;
 	min-height: 40px;
 	min-width: 400px;
+}
+
+.players-online {
+	bottom: 0;
+	left: 0;
 }
 
 .game-wrapper canvas {
@@ -56,60 +61,3 @@
 	bottom: 0;
 	z-index: -1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.game-wrapper {
-	position: relative;
-	width: 800px;
-	height: 530px;
-	margin: 0 auto;
-  display: block;
-}
-
-.game {
-  position: relative;
-}
-
-.game canvas, .game div {
-	position: absolute;
-	background: transparent;
-	top: 25px;
-	left: 80px;
-}
-
-.game.UI {
-	background-color: #7ACC52;
-	width: 640px;
-	height: 40px;
-}
-
-.game.background {
-	background-color: #FFFF89;
-	width: 640px;
-	height: 480px;
-}
-*/
