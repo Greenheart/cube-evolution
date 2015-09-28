@@ -6,8 +6,6 @@ Meteor.publish("cubes", function(){
 });
 
 Meteor.publish("userStatus", function() {
-  // TODO: Check if this can be done more securely.
-  // might be possible to just return a integer of currently online users
-  // that then gets stored in client somewhere
-  return Meteor.users.find({ "status.online": true });
+  // publish information about which users that are logged in
+  return Meteor.users.find({ "status.online": true }, { "status.online": true });
 });

@@ -3,17 +3,28 @@
 
     <!--
     TODO:
-     * this template should show stats about the cube
+     * fix styling for general tables, to be used in both cubeStats and leaderboards-template
      -->
     <h3>Cube Stats</h3>
     <table>
       <tr>
-        <td>Size: </td>
-        <td>{{size}}</td>
+        <td>Health: </td>
+        <td>{{health}}</td>
       </tr>
       <tr>
-        <td>Speed: </td>
-        <td>{{speed}}</td>
+        <td>Level: </td>
+        <td>{{level}}</td>
+      </tr>
+
+      <hr>
+
+      <tr>
+        <td>Strength: </td>
+        <td>{{attributes.strength}}</td>
+      </tr>
+      <tr>
+        <td>Agility: </td>
+        <td>{{attributes.agility}}</td>
       </tr>
     </table>
   </div>
