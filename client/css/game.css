@@ -14,27 +14,49 @@
 	position: absolute;
 	color: yellow;
 	background-color: rgba(10, 10, 0, 0.4);
+	text-align: center;
 	border: 1px solid black;
 	border-radius: 2px;
-	z-index: 1;
 }
 
 .drop-down {
-	width: 7vw;
+	width: 7.5vw;
 	height: 24vh;
 	min-width: 100px;
 	min-height: 200px;
 }
 
-.cube-stats {
+.switch {
 	top: 0;
+	font-weight: bold;
+	width: 7.5vw;
+	height: 3vh;
+	min-width: 100px;
+	min-height: 20px;
+}
+
+	.switch:hover {
+		background-color: rgba(10, 10, 0, 0.8);
+		cursor: pointer;
+	}
+
+#cube-stats {
+	top: 3.2vh;
 	left: 0;
 }
 
-.leaderboard {
-	top: 0;
+	.switch-stats {
+		left: 0;
+	}
+
+#leaderboard {
+	top: 3.2vh;
 	right: 0;
 }
+
+	.switch-leaderboard {
+		right: 0;
+	}
 
 .experience {
 	bottom: 0;
@@ -60,5 +82,4 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: -1;
 }

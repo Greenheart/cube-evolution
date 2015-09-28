@@ -1,5 +1,8 @@
 <template name="leaderboard">
-  <div class="ui-element drop-down leaderboard">
-    <h3>Leaderboard</h3>
-  </div>
+  <div class="ui-element switch switch-leaderboard">Leaderboard</div>
+  {{#if elementOpen}}
+    <div id="leaderboard" class="ui-element drop-down">
+      Coming Soon...
+    </div>
+  {{/if}}
 </template>

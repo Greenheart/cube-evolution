@@ -1,31 +1,32 @@
 <template name="cubeStats">
-  <div class="ui-element drop-down cube-stats">
+  <div class="ui-element switch switch-stats">Cube Stats</div>
+  {{#if elementOpen}}
+    <div id="cube-stats" class="ui-element drop-down">
+      <!--
+      TODO:
+       * fix styling for general tables, to be used in both cubeStats and leaderboards-template
+       -->
+      <table>
+        <tr>
+          <td>Health: </td>
+          <td>{{health}}</td>
+        </tr>
+        <tr>
+          <td>Level: </td>
+          <td>{{level}}</td>
+        </tr>
 
-    <!--
-    TODO:
-     * fix styling for general tables, to be used in both cubeStats and leaderboards-template
-     -->
-    <h3>Cube Stats</h3>
-    <table>
-      <tr>
-        <td>Health: </td>
-        <td>{{health}}</td>
-      </tr>
-      <tr>
-        <td>Level: </td>
-        <td>{{level}}</td>
-      </tr>
+        <hr>
 
-      <hr>
-
-      <tr>
-        <td>Strength: </td>
-        <td>{{attributes.strength}}</td>
-      </tr>
-      <tr>
-        <td>Agility: </td>
-        <td>{{attributes.agility}}</td>
-      </tr>
-    </table>
-  </div>
+        <tr>
+          <td>Strength: </td>
+          <td>{{attributes.strength}}</td>
+        </tr>
+        <tr>
+          <td>Agility: </td>
+          <td>{{attributes.agility}}</td>
+        </tr>
+      </table>
+    </div>
+  {{/if}}
 </template>

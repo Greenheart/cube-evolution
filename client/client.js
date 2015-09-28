@@ -1,4 +1,4 @@
-// Main client logic regarding UI-behaviors
+// Eventhandlers and helpers for app UI
 // for game logic, check game.js
 
 Accounts.ui.config({
@@ -9,6 +9,10 @@ Meteor.subscribe("cubes");
 Meteor.subscribe("userStatus");
 
 Session.setDefault("inGame", false);
+Session.setDefault("statsOpen", false);
+Session.setDefault("leaderboardOpen", false);
+
+
 
 // ---------------- GENERAL UI -------------------
 
@@ -35,6 +39,56 @@ Template.startScreen.events({
     Session.set("inGame", true);
   }
 });
+
+
+
+// ------------- GAME-UI EVENTS ----------------------
+
+Template.game.events({
+  'click .switch-stats': function() {
+      Session.set("statsOpen", ! Session.get("statsOpen"));
+  },
+  'click .switch-leaderboard': function() {
+    Session.set("leaderboardOpen", ! Session.get("leaderboardOpen"));
+  },
+  'click #cube-stats': function() {
+    Session.set("statsOpen", ! Session.get("statsOpen"));
+  },
+  'click #leaderboard': function() {
+    Session.set("leaderboardOpen", ! Session.get("leaderboardOpen"));
+  }
+});
+
+
+
+// ------------- GAME-UI HELPERS ---------------------
+
+Template.game.helpers({
+  'getUserCube': function() {
+    return Cubes.find({ owner: Meteor.userId() });
+  }
+});
+
+Template.cubeStats.helpers({
+  'elementOpen': function() {
+    return Session.get("statsOpen");
+  }
+});
+
+Template.leaderboard.helpers({
+  'elementOpen': function() {
+    return Session.get("leaderboardOpen");
+  }
+});
+
+
+Template.onlinePlayersCount.helpers({
+  'count': function() {
+    // counts the number of players online
+    return Meteor.users.find({ "status.online": true }).count();
+  }
+});
+
 
 // --------------- CLIENT HELPERS -----------------
 
